@@ -1,0 +1,385 @@
+
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color:white;
+}
+
+
+
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 35px;
+    bottom: 45px;
+    z-index: 100;
+    background-color: black;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    color:white;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 15px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: white;
+    }
+}
+
+/*css part for video*/
+
+.video-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  .video-container {
+    height: 100vh;
+  }
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*** A E S T H E T I C S ***/
+/***************************/
+* {
+  box-sizing: border-box;
+}
+
+.video-container:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 5vw;
+ 
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 75px;
+  }
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.support {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+}
+.support a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.support a:before {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+.support a:hover:before {
+  width: 100%;
+}
+
+
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    box-shadow: none;
+    border: 1px solid #DEE2E6;
+}
+
+/*typed text*/
+
+.typ1{
+  display: inline-block;
+
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
+/*types text box*/
+
+.fancy {
+  padding: 1em;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+/*    text-shadow: 2px 2px  #045bac;*/
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+
+  /* At the bottom of our background stack,
+     let's have a misty grey solid color */
+  background-color: ;
+
+  /* We stack linear gradients on top of each
+     other to create our color strip effect.
+     As you will notice, color gradients are
+     considered to be images and can be
+     manipulated as such */
+  background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #7ed957 95%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #7ed957 95%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #035aac 90%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #035aac 92%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 85%, #045bac 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #f58a2a 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 80%, #f58a2a 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #7ed957 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #7ed957 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #035aac 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #045bac 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 80%, white 80%);
+}
+
+
+
+/*cards css*/
+.card {
+  --card-gradient: rgba(0, 0, 0, 0.8);
+  --card-gradient: black;
+  --card-blend-mode: overlay;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.08em 0.5em 0.5rem -0.06em rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  background-image: linear-gradient(var(--card-gradient), white max(9.5rem, 27vh));
+  overflow: hidden;
+}
+.card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: max(10rem, 30vh);
+  aspect-ratio: 4/3;
+  mix-blend-mode: var(--card-blend-mode);
+}
+.card img ~ * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+
+/* Additional demo display styles */
+* {
+  box-sizing: border-box;
+}
+
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.card a {
+  color: inherit;
+}
+
+.card-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-gap: 1.5rem;
+  max-width: 100vw;
+  width: 120ch;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*ready to start*/
+.cards1 {
+/*  background-color: var(--background);*/
+  display: block;
+  width:50%;
+  min-height: 90px;
+  cursor: pointer;
+  padding: 15px;
+  margin: calc(10vh - 0px) auto 0 auto;
+  border: 3px solid var(--primary);
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+
+.cards1:hover {
+  animation: shadow-wave 1s ease infinite;
+}
+
+
+@keyframes shadow-wave {
+  0% {
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+      20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+      30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+      40px -40px 0 -3px var(--background), 40px -40px var(--red);
+  }
+  20% {
+    border: 3px solid var(--red);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
+      20px -20px 0 -3px var(--background), 20px -20px var(--green),
+      30px -30px 0 -3px var(--background), 30px -30px var(--yellow),
+      40px -40px 0 -3px var(--background), 40px -40px var(--orange);
+  }
+}
+.cards1 {
+  --primary: black;
+  --secondary: #f58a2a;
+  --background: white;
+  --green: purple;
+  --yellow: #f58a2a;
+  --orange: #035aac;
+  --red: #045bac;
+} 
+
+/**{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*/
+
+/*.card p {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}*/
+
+.back
+{
+  background-image: url(https://static.videezy.com/system/resources/thumbnails/000/043/309/original/200128_03_Saber-rectangle-blue-pink-seamless-loop.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
